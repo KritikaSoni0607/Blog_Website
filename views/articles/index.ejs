@@ -8,7 +8,8 @@
     <title>Blog Website</title>
     <style>
         body{
-            background-image: url('/public/images/background.JPG');
+            background-image: url('/images/background.PNG');
+            background-size: cover;
         }
         .container{
             margin-top:50px;
@@ -20,14 +21,14 @@
     
 </head>
 
-<body style="background-color: rgb(255, 255, 255);">
+<body>
     <div class="container" >
-        <center><h1 class="mb-4" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 50px ;font-weight:500; "><b>Blog Website</b></h1><br></center>
+        <center><h1 class="mb-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 50px ;font-weight:500; "><b>Blog Website</b></h1><br></center>
         <a href="/articles/new" class="btn btn-success">Create New Article</a>
         <br>
         <% articles.forEach(article=>{%>
             <br>
-                <div class="card mt4" style="box-shadow: 0px 10px 10px rgb(78, 194, 194);background-color: rgba(136, 177, 175, 0.121) !important; transition: background-color 0.3s;">
+                <div class="card mt4" style="box-shadow: 0px 10px 10px rgb(78, 194, 194);background-color: rgba(255, 255, 255, 0.550) !important; transition: background-color 0.3s;">
                     <div class="card-body">
                         <h4 class="card-title" >
                             <%=article.title%>

@@ -7,6 +7,10 @@
     <title>Blog Website</title>
     <style>
    
+   body{
+            background-image: url('/images/CREATE.jpg');
+            background-size: cover;
+            }
       
       .container {
           
@@ -14,8 +18,8 @@
           padding: 20px;
           border: 1px solid #ccc;
           border-radius: 5px;
-          background-color: rgba(223, 187, 187, 0.452);
-          box-shadow: 0 0 10px 10px rgba(243, 95, 142, 0.605);
+          background-color: rgba(255, 255, 255, 0.628);
+          box-shadow: 0 0 10px 10px rgba(10, 6, 8, 0.605);
           align-items: center;
       }
 
@@ -56,7 +60,7 @@
 <body>
       <div class="container">
         <br>
-         <h1 class="mb-4">Edit Article</h1>
+        <h1 class="mb-4"><b>Edit Article</b></h1>
          <form action="/articles/<%=article.id%>?_method=PUT" method="POST">
             <%- include('form_field') %>
          </form>
